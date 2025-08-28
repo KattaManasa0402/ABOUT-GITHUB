@@ -1,0 +1,39 @@
+# Go to your project folder
+cd <your-project-folder>
+
+# Initialize Git
+git init
+
+# Add all files
+git add .
+
+# Commit files
+git commit -m "Initial commit"
+
+# Connect local repo with remote GitHub repo
+git remote add origin https://github.com/<username>/<repo>.git
+
+# Push to GitHub (first time, set upstream branch)
+git push -u origin main
+
+# From next time:
+git add .
+git commit -m "Your commit message"
+git push
+
+--------------------------------------------------
+# Clone the repo from GitHub to your local machine
+git clone https://github.com/<username>/<repo>.git
+
+# Move into the repo folder
+cd <repo>
+
+# Make changes, then
+git add .
+git commit -m "Your commit message"
+
+# Push updates to GitHub
+git push
+
+# To update your local with the latest changes from GitHub
+git pull
